@@ -1,0 +1,61 @@
+/* Estilo automático para a página: games */
+section.releases {
+    .card {
+        background-color: transparent;
+        overflow: hidden;
+
+        &:hover {
+            .card-body {
+                .thumb {
+                    img {
+                        scale: 1.1;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+
+        .card-body {
+            position: relative;
+            padding: 0;
+
+            .thumb {
+                img {
+                    opacity: 0.9;
+                    transition: 300ms all ease-in-out;
+                }
+            }
+
+            .card-details {
+                position: absolute;
+                width: 100%;
+                bottom: 0;
+                padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+                background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
+
+                ul.platforms {
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                    padding-right: 1.5rem;
+                    line-height: 0em;
+
+                    li.pl-list {
+                        display: inline-block;
+                        margin-right: 0.25rem;
+                        margin-bottom: 0.25rem;
+
+                        svg {
+                            opacity: 0.6;
+                            transition: 300ms all ease-in-out;
+
+                            &:hover {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

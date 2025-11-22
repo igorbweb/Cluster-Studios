@@ -1,0 +1,117 @@
+/* Estilo automático para a página: home */
+.hero-section.home {
+    overflow: hidden;
+    /* padding-top: 98px; */
+    position: relative;
+    min-height: 100svh;
+    padding: 0;
+
+    .hero-overlay {
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(18px);
+        opacity: 0;
+        transition: opacity 1s ease;
+        z-index: 3;
+    }
+
+    .hero-video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        right: 0;
+        filter: brightness(0.6);
+    }
+
+    .hero-content {
+        position: absolute;
+        top: 30%;
+        width: 100%;
+        z-index: 4;
+        pointer-events: none;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 1.2s ease, transform 1.2s ease;
+
+        &.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        h1,
+        p {
+            color: #FFFCF5;
+            font-size: 20px;
+        }
+
+        a {
+            pointer-events: auto;
+        }
+
+        a.cta {
+            font-size: 20px;
+        }
+
+        h1 {
+            font-size: 46px;
+            line-height: 60px;
+            font-weight: 500;
+            margin-bottom: 16px;
+
+            span {
+                color: #ccbdff;
+            }
+        }
+    }
+}
+
+section.services {
+    .card-service {
+        border-radius: 5px;
+        background-color: #121212;
+        /* padding: 48px; */
+        height: 50svh;
+        border: 1px solid rgb(82, 82, 82);
+        position: relative;
+
+        .thumb {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .text {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            padding: 48px;
+            left: 0;
+            top: 0;
+            backdrop-filter: blur(2px);
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 0;
+        }
+    }
+}

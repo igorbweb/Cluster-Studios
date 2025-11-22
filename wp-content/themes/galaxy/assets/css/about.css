@@ -1,0 +1,87 @@
+/* Estilo automático para a página: sobre */
+.hero-intern p,
+.hero-intern h1,
+.hero-intern a,
+.hero-intern .texto {
+    background: transparent !important;
+}
+
+.hero-intern {
+    background-color: transparent;
+    
+    .texto {
+        min-height: 30svh;
+        justify-content: center;
+    }
+    
+    h1,
+    p {
+        color: #FFFCF5;
+        font-size: 20px;
+    }
+    
+    a {
+        pointer-events: auto;
+    }
+    
+    h1 {
+        font-size: 46px;
+        line-height: 60px;
+        font-weight: 500;
+        margin-bottom: 16px;
+        
+    }
+    
+}
+.quality-badge {
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+section.about-metrics {
+    background: #0b0b0f;
+    color: #fff;
+
+    .metrics-title {
+        font-size: 2.4rem;
+        margin-bottom: 10px;
+    }
+
+    .metrics-subtitle {
+        opacity: 0.7;
+        margin-bottom: 40px;
+    }
+
+    .metric-box {
+        h3 {
+            font-size: 2.4rem;
+            margin-bottom: 8px;
+            color: #a874ff; // Accent color
+        }
+
+        p {
+            opacity: 0.8;
+        }
+    }
+}
+
+section.about-quality {
+    background: #0b0b0f;
+    color: #fff;
+
+
+    .quality-title {
+        font-size: 2.2rem;
+        margin: 10px 0 20px;
+    }
+
+    .quality-text {
+        opacity: 0.8;
+    }
+
+    img {
+        border-radius: 12px;
+        filter: brightness(0.85);
+    }
+}

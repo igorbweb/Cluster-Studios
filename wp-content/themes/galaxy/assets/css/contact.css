@@ -1,0 +1,69 @@
+/* Estilo automático para a página: contact */
+.hero-intern p,
+.hero-intern h1,
+.hero-intern a,
+.hero-intern .texto {
+    background: transparent !important;
+}
+
+.hero-intern {
+    background-color: transparent;
+
+    .texto {
+        min-height: 30svh;
+        justify-content: center;
+    }
+
+    h1,
+    p {
+        color: #FFFCF5;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    a {
+        pointer-events: auto;
+    }
+
+    h1 {
+        font-size: 46px;
+        line-height: 60px;
+        font-weight: 500;
+        margin-bottom: 16px;
+
+    }
+
+}
+
+section.contact {
+
+    .info-text {
+        ul.info-list {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+
+            li {
+                margin-bottom: 10px;
+                color: #FFFCF5;
+            }
+        }
+    }
+}
+
+.contact-values {
+    padding: 80px 0;
+
+    .value-box {
+        margin-bottom: 40px;
+
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 12px;
+        }
+
+        p {
+            opacity: 0.85;
+        }
+    }
+}
